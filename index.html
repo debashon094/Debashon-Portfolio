@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Debashon Chakraborty — Portfolio</title>
+  <meta name="description" content="Data Engineer & Applied AI Researcher. Distributed & Trustworthy AI Systems for Real‑World Data." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial; }
+    .container { max-width: 1120px; }
+    .chip { @apply inline-flex items-center rounded-full border px-3 py-1 text-xs font-medium text-gray-700; }
+    /* simple fade-up */
+    .fade-up { opacity: 0; transform: translateY(16px); transition: all .6s ease; }
+    .fade-up.show { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body class="bg-white text-neutral-800">
+  <!-- NAV -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/80 border-b">
+    <nav class="container mx-auto px-4 h-14 flex items-center justify-between">
+      <a href="#home" class="font-bold">Debashon Chakraborty</a>
+      <button id="menuBtn" class="md:hidden p-2 rounded border" aria-label="Toggle menu">☰</button>
+      <div id="menu" class="hidden md:flex gap-6 text-sm">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#experience" class="hover:underline">Experience</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#publications" class="hover:underline">Publications</a>
+        <a href="#research" class="hover:underline">Research</a>
+        <a href="#education" class="hover:underline">Education</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+      <div class="hidden md:flex items-center gap-2">
+        <a href="#resume" class="border rounded px-3 py-1 text-sm">Resume</a>
+        <a href="#contact" class="bg-black text-white rounded px-3 py-1 text-sm">Get in touch</a>
+      </div>
+    </nav>
+    <div id="menuPanel" class="md:hidden hidden border-t bg-white">
+      <div class="px-4 py-3 flex flex-col gap-2 text-sm">
+        <a href="#about" class="py-1">About</a>
+        <a href="#experience" class="py-1">Experience</a>
+        <a href="#projects" class="py-1">Projects</a>
+        <a href="#publications" class="py-1">Publications</a>
+        <a href="#research" class="py-1">Research</a>
+        <a href="#education" class="py-1">Education</a>
+        <a href="#contact" class="py-1">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="container mx-auto px-4 py-16 md:py-24">
+    <div class="fade-up">
+      <div class="mb-3 inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase">
+        ✨ Data Engineering × AI/ML
+      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Building <span class="bg-yellow-200 px-1">Trustworthy, Distributed AI Systems</span> for Real‑World Data
+      </h1>
+      <p class="mt-4 max-w-2xl text-lg text-neutral-600">
+        Data Engineer & Applied AI Researcher based in Houston, Texas. I design resilient data pipelines (AWS/Databricks/Spark) and develop computer vision & ML systems with a focus on reliability, explainability, and deployment at scale.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="#projects" class="bg-black text-white rounded px-4 py-2 text-sm">Explore Projects</a>
+        <a href="#research" class="rounded px-4 py-2 text-sm border">Research Interests</a>
+        <a href="#contact" class="rounded px-4 py-2 text-sm border">Contact</a>
+      </div>
+      <div class="mt-6 flex gap-4 text-sm text-neutral-600">
+        <div>📍 Houston, TX</div>
+        <div>🧠 AWS · Databricks · Spark · PyTorch · PySpark</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container mx-auto px-4 py-16 border-t">
+    <div class="mb-8">
+      <div class="text-sm font-semibold tracking-widest uppercase text-gray-500 mb-2">Profile</div>
+      <h2 class="text-3xl md:text-4xl font-bold">About</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="md:col-span-2 border rounded-2xl p-6">
+        <h3 class="text-xl font-semibold mb-3">Hi, I’m Debashon 👋</h3>
+        <p class="mb-4">
+          I’m a data‑engineering‑focused professional with a Master’s in Management Information Systems (Lamar University, 2024). My experience spans large‑scale ETL/ELT, streaming pipelines, and applied machine learning for computer vision and anomaly detection. I care about building AI that is transparent, robust, and production‑ready.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="chip">Python</span><span class="chip">PySpark</span><span class="chip">SQL</span>
+          <span class="chip">Databricks</span><span class="chip">Apache Spark</span>
+          <span class="chip">AWS (S3, Glue, EMR, Lambda)</span><span class="chip">Redshift</span>
+          <span class="chip">Airflow</span><span class="chip">Docker</span>
+          <span class="chip">PyTorch</span><span class="chip">TensorFlow</span>
+          <span class="chip">Computer Vision</span><span class="chip">XAI</span>
+        </div>
+      </div>
+      <div class="border rounded-2xl p-6">
+        <h3 class="text-xl font-semibold mb-3">At a Glance</h3>
+        <ul class="space-y-2 text-sm">
+          <li><strong>Education:</strong> M.S. MIS, Lamar University (Dec 2024)</li>
+          <li><strong>Recent Roles:</strong> Data Engineer (Ford projects); Sr. Software Developer (Digicon)</li>
+          <li><strong>Interests:</strong> Distributed AI, Explainable CV, Edge/IoT Analytics, Data‑centric Security</li>
+          <li><strong>Open to:</strong> PhD (Spring/Fall 2026), Research/ML Engineering roles</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="container mx-auto px-4 py-16 border-t">
+    <div class="mb-8">
+      <div class="text-sm font-semibold tracking-widest uppercase text-gray-500 mb-2">Career</div>
+      <h2 class="text-3xl md:text-4xl font-bold">Experience</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Job 1 -->
+      <div class="border rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">Data Engineer (Consulting/Projects)</h3>
+        <div class="text-sm text-neutral-500">Ford Motor Company · 2024 – 2025</div>
+        <ul class="list-disc pl-5 space-y-2 text-sm mt-3">
+          <li>Designed and optimized Databricks/Spark pipelines across bronze→silver→gold layers (Medallion).</li>
+          <li>Built real‑time ETL/ELT and feature stores on AWS (S3, Glue, EMR, Lambda, Redshift).</li>
+          <li>Enabled ML training & streaming inference with lineage and observability.</li>
+        </ul>
+      </div>
+      <!-- Job 2 -->
+      <div class="border rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">Senior Software Developer / Assistant Manager</h3>
+        <div class="text-sm text-neutral-500">Digicon Technologies Ltd. · 2020 – 2023</div>
+        <ul class="list-disc pl-5 space-y-2 text-sm mt-3">
+          <li>Shipped production web platforms (Python/Django), REST APIs, and data services.</li>
+          <li>Led cross‑functional delivery and mentored junior engineers.</li>
+        </ul>
+      </div>
+      <!-- Job 3 -->
+      <div class="border rounded-2xl p-6 md:col-span-2">
+        <h3 class="text-lg font-semibold">Data Engineer</h3>
+        <div class="text-sm text-neutral-500">Purple Care Ltd. · 2018 – 2019</div>
+        <ul class="list-disc pl-5 space-y-2 text-sm mt-3">
+          <li>Developed ETL pipelines and dashboards; accelerated analytics with SQL + Python.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="container mx-auto px-4 py-16 border-t">
+    <div class="mb-8">
+      <div class="text-sm font-semibold tracking-widest uppercase text-gray-500 mb-2">Portfolio</div>
+      <h2 class="text-3xl md:text-4xl font-bold">Selected Projects</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="border rounded-2xl p-6">
+        <h3 class="font-semibold">Vision‑based Traffic Analytics</h3>
+        <p class="text-sm text-neutral-600 mt-2">End‑to‑end pipeline for urban camera feeds: ingestion → object detection (CNN) → anomaly alerts → dashboarding.</p>
+        <div class="flex flex-wrap gap-2 mt-3 text-xs">
+          <span class="chip">PyTorch</span><span class="chip">OpenCV</span><span class="chip">Spark Streaming</span><span class="chip">AWS Lambda</span><span class="chip">Redshift</span>
+        </div>
+      </div>
+      <div class="border rounded-2xl p-6">
+        <h3 class="font-semibold">Self‑Healing ETL Guardrails</h3>
+        <p class="text-sm text-neutral-600 mt-2">LLM‑assisted schema & data quality checks with auto‑remediation proposals and audit trails.</p>
+        <div class="flex flex-wrap gap-2 mt-3 text-xs">
+          <span class="chip">PySpark</span><span class="chip">Databricks</span><span class="chip">Great Expectations</span><span class="chip">LangChain</span>
+        </div>
+      </div>
+      <div class="border rounded-2xl p-6">
+        <h3 class="font-semibold">Explainable Imaging (Healthcare)</h3>
+        <p class="text-sm text-neutral-600 mt-2">CNN classification with post‑hoc explanations (Grad‑CAM/SHAP) and clinician‑friendly reports.</p>
+        <div class="flex flex-wrap gap-2 mt-3 text-xs">
+          <span class="chip">CNN</span><span class="chip">Grad‑CAM</span><span class="chip">SHAP</span><span class="chip">FastAPI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications" class="container mx-auto px-4 py-16 border-t">
+    <div class="mb-8">
+      <div class="text-sm font-semibold tracking-widest uppercase text-gray-500 mb-2">Research Output</div>
+      <h2 class="text-3xl md:text-4xl font-bold">Publications & Writing</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="border rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">Anomaly Detection in IoT‑Healthcare Networks</h3>
+        <div class="text-sm text-neutral-500">Peer‑reviewed (Year)</div>
+        <a class="text-sm underline mt-2 inline-block" href="#" target="_blank" rel="noreferrer">Read</a>
+      </div>
+      <div class="border rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">AI‑based Market Prediction</h3>
+        <div class="text-sm text-neutral-500">Peer‑reviewed (Year)</div>
+        <a class="text-sm underline mt-2 inline-block" href="#" target="_blank" rel="noreferrer">Read</a>
+      </div>
+      <div class="border rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">RFID‑Arduino Attendance System</h3>
+        <div class="text-sm text-neutral-500">Workshop/Conference (Year)</div>
+        <a class="text-sm underline mt-2 inline-block" href="#" target="_blank" rel="noreferrer">Read</a>
+      </div>
+      <!-- <div class="border rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">Blog: Data‑Centric XAI for Vision Systems</h3>
+        <div class="text-sm text-neutral-500">Medium/Personal Site</div>
+        <a class="text-sm underline mt-2 inline-block" href="#" target="_blank" rel="noreferrer">Read</a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section id="research" class="container mx-auto px-4 py-16 border-t">
+    <div class="mb-8">
+      <div class="text-sm font-semibold tracking-widest uppercase text-gray-500 mb-2">Focus</div>
+      <h2 class="text-3xl md:text-4xl font-bold">Research Interests</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="border rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">Distributed & Trustworthy AI Systems</h3>
+        <ul class="list-disc pl-5 space-y-2 text-sm mt-3">
+          <li>Federated/edge learning for vision on resource‑constrained devices.</li>
+          <li>Explainability, robustness, and safety for deployed ML systems.</li>
+          <li>Data quality, lineage, and observability for ML pipelines.</li>
+        </ul>
+      </div>
+      <div class="border rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">Application Domains</h3>
+        <ul class="list-disc pl-5 space-y-2 text-sm mt-3">
+          <li>Smart infrastructure & intelligent transportation systems.</li>
+          <li>Healthcare imaging and IoT‑driven monitoring.</li>
+          <li>Enterprise data security & anomaly detection.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="container mx-auto px-4 py-16 border-t">
+    <div class="mb-8">
+      <div class="text-sm font-semibold tracking-widest uppercase text-gray-500 mb-2">Academics</div>
+      <h2 class="text-3xl md:text-4xl font-bold">Education</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="border rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">M.S. in Management Information Systems</h3>
+        <div class="text-sm text-neutral-500">Lamar University, USA · Graduated Dec 2024</div>
+        <ul class="list-disc pl-5 space-y-2 text-sm mt-3">
+          <li>Specialization: Data Engineering & AI</li>
+          <li>Projects: Distributed pipelines on AWS/Databricks; CV classification</li>
+        </ul>
+      </div>
+      <div class="border rounded-2xl p-6">
+        <h3 class="text-lg font-semibold">B.Sc. in Computer Science</h3>
+        <div class="text-sm text-neutral-500">(Bangladesh) · 2017</div>
+        <ul class="list-disc pl-5 space-y-2 text-sm mt-3">
+          <li>Thesis on ARP table security with Python‑based mitigation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="container mx-auto px-4 py-16 border-t">
+    <div class="mb-8">
+      <div class="text-sm font-semibold tracking-widest uppercase text-gray-500 mb-2">Let’s Collaborate</div>
+      <h2 class="text-3xl md:text-4xl font-bold">Contact</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 items-start">
+      <div class="md:col-span-2 border rounded-2xl p-6">
+        <p class="text-sm text-neutral-600 mb-4">
+          I’m currently exploring PhD opportunities for Spring/Fall 2026 and open to collaborations on distributed AI systems, computer vision, and data‑centric ML.
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <a class="bg-black text-white rounded px-4 py-2 text-sm" href="mailto:debashonchakraborty@gmail.com">✉ Email</a>
+          <a class="border rounded px-4 py-2 text-sm" href="https://www.linkedin.com/in/debashon-chakraborty/" target="_blank" rel="noreferrer">in LinkedIn</a>
+          <a class="border rounded px-4 py-2 text-sm" href="https://github.com/debashon094" target="_blank" rel="noreferrer">⌁ GitHub</a>
+        </div>
+        <div id="resume" class="pt-4">
+          <a class="rounded px-4 py-2 text-sm border" href="Debashon_Data Engineer_06202025_Academic.pdf" target="_blank" rel="noopener noreferrer">⬇ View Resume (PDF)</a>
+        </div>
+      </div>
+      <div class="border rounded-2xl p-6">
+        <h3 class="text-lg font-semibold mb-2">Quick Info</h3>
+        <ul class="space-y-2 text-sm">
+          <li><strong>Location:</strong> Houston, TX</li>
+          <li><strong>Interests:</strong> Distributed AI · XAI · CV · Edge/IoT</li>
+          <li><strong>Availability:</strong> PhD (Spring/Fall 2026) · Research roles</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t py-8 text-sm">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p>© <span id="year"></span> Debashon Chakraborty. All rights reserved.</p>
+      <div class="flex items-center gap-4">
+        <a class="hover:underline" href="#about">About</a>
+        <a class="hover:underline" href="#projects">Projects</a>
+        <a class="hover:underline" href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // mobile menu toggle
+    const btn = document.getElementById('menuBtn');
+    const panel = document.getElementById('menuPanel');
+    if (btn) btn.addEventListener('click', () => panel.classList.toggle('hidden'));
+
+    // fade-up on view
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('show'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
